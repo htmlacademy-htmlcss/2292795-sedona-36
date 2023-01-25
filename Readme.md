@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна Верна](https://up.htmlacademy.ru/htmlcss/36/user/2292795).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Ясель] (https://up.htmlacademy.ru/profession/frontender/16/htmlcss/36/user/95219).
 
 ---
 
