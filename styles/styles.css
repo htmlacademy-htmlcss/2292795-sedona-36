@@ -59,6 +59,10 @@ body {
     text-decoration: none;
 }
 
+.advantages {
+    background-color: #FFFFFF;
+}
+
 .advantages-list, .services-list {
     list-style-type: none;
 }
@@ -146,6 +150,7 @@ body {
 /* СЕРВИС */
 .services {
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .services-title {
@@ -194,6 +199,11 @@ body {
 }
 
 /* ПЕРЕХОД НА СТР ПОИСКА ОТЕЛЕЙ */
+.order {
+    background-color: #FFFFFF;
+}
+
+
 .order-title {
     font-size: 30px;
     line-height: 36px;
@@ -259,6 +269,9 @@ body {
 }
 
 /* F O O T E R */
+.page-footer {
+    background-color: #FFFFFF;
+}
 /* СОЦИАЛЬНЫЕ СЕТИ */
 .footer-contacts-phon {
     font-size: 40px;
@@ -331,6 +344,10 @@ body {
 }
 
 /* РЕЗУЛЬТАТ ОТБОРА И ВЫВОД НА СТРАНИЦУ */
+.select {
+    background-color: #FFFFFF;
+}
+
 .select-result {
     font-size: 30px;
     line-height: 36px;
@@ -342,6 +359,10 @@ body {
 }
 
 /* КАРТОЧКИ ОТЕЛЕЙ */
+.hotel {
+    background-color: #FFFFFF;
+}
+
 .hotel-list {
     list-style-type: none;
 }
@@ -376,4 +397,36 @@ body {
     line-height: 20px;
     font-weight: 400;
     text-align: center;
+}
+
+/* ПАГИНАЦИЯ */
+.pagination {
+    list-style-type: none;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700px;
+    text-decoration: none;
+}
+
+.pagination-link {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.pagination-link-plenty {
+    color: #000000;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400px;
+
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+}
+
+/* ПОДПИСКА НА РАССЫЛКУ каталог */
+.subscribe {
+    background-color: #FFFFFF;
 }
