@@ -76,18 +76,24 @@ body {
 
 /* Навигация */
 .navigation {
-  display: flex;
   width: 1200px;
+  padding: 0;
   margin: 0 auto;
 }
 
-.navigation-all {
-  width: 560px;
+.navigation-list {
+  display: flex;
+  width: 339px;
+  justify-content: space-around;
+  padding: 0;
   margin: 0;
 }
 
 .menu-users-list {
+  display: flex;
   max-width: 304px;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
 }
 
@@ -146,7 +152,6 @@ body {
 .welcome {
   display: block;
   width: 1200px;
-  height: 485px;
   background-image: url("../images/background/sedona.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -189,7 +194,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 261px;
   margin: 0 auto;
   padding: 0;
   justify-content: center;
@@ -198,7 +202,7 @@ body {
 }
 
 .advantages-title {
-  width: 620px;
+  max-width: 620px;
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -440,7 +444,7 @@ body {
 }
 
 /* ПОДПИСКА НА РАССЫЛКУ */
-.subscribe-main {
+.subscribe {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -449,12 +453,15 @@ body {
   padding: 0;
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
+}
 
-  background-color: #000000;
+.subscribe-main {
+  background-color: #FFFFFF;
   background-image: url("../images/background/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .subscribe-presentation {
@@ -542,6 +549,10 @@ body {
 }
 
 /* СОЦИАЛЬНЫЕ СЕТИ */
+.footer-social {
+  display: flex;
+}
+
 .footer-contacts-phon {
   width: 720px;
   margin: 0;
@@ -613,7 +624,7 @@ body {
   display: flex;
   width: 1060px;
   margin: 0;
-  padding:0;
+  padding: 0;
 
 }
 
@@ -661,6 +672,7 @@ body {
 
 /* РЕЗУЛЬТАТ ОТБОРА И ВЫВОД НА СТРАНИЦУ */
 .select {
+  margin: 0;
   background-color: #FFFFFF;
 }
 
@@ -676,7 +688,20 @@ body {
 
 /* КАРТОЧКИ ОТЕЛЕЙ */
 .hotel {
+  width: 1060px;
+  margin: 0;
   background-color: #FFFFFF;
+}
+
+.hotel-list {
+  margin: 0;
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;*/
+}
+
+.hotel-card {
+  width: 340px;
 }
 
 .hotel-card-link {
@@ -714,6 +739,7 @@ body {
 
 /* ПАГИНАЦИЯ */
 .pagination {
+  margin: 0;
   list-style-type: none;
   background-color: #FFFFFF;
   font-size: 20px;
@@ -739,7 +765,4 @@ body {
   background-color: #F2F2F2;
 }
 
-/* ПОДПИСКА НА РАССЫЛКУ каталог */
-.subscribe {
-  background-color: #FFFFFF;
-}
+
