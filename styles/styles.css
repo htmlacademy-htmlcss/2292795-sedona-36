@@ -76,6 +76,7 @@ body {
 
 /* Навигация */
 .navigation {
+  display: flex;
   width: 1200px;
   padding: 0;
   margin: 0 auto;
@@ -549,8 +550,10 @@ body {
 }
 
 /* СОЦИАЛЬНЫЕ СЕТИ */
-.footer-social {
+.footer-social-list {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contacts-phon {
@@ -585,7 +588,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 412px;
   margin: 0;
   background-image: url("../images/background/properties.jpg");
   background-repeat: no-repeat;
