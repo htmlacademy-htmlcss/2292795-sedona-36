@@ -87,7 +87,6 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 339px;
   padding: 0;
   margin: 0;
   margin-left: 28px;
@@ -101,13 +100,11 @@ body {
 
 .menu-users-list {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 304px;
   padding: 0;
   margin-left: auto;
   margin-right: 70px;
+  align-items: center;
 }
-
 
 .navigation-link {
   display: block;
@@ -295,7 +292,6 @@ body {
 }
 
 .advantages-subtitle {
-  width: 230px;
   padding: 0;
   font-size: 24px;
   line-height: 28px;
@@ -304,7 +300,6 @@ body {
 }
 
 .advantages-description {
-  width: 230px;
   font-weight: 400;
 }
 
@@ -455,7 +450,7 @@ body {
   width: 376px;
   height: 52px;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 52px;
   margin: 0 auto;
   padding: 8px 50px;
 }
@@ -561,6 +556,7 @@ body {
   padding: 40px 0 30px;
   width: 1060px;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* СОЦИАЛЬНЫЕ СЕТИ */
@@ -628,7 +624,7 @@ body {
   flex-direction: column;
   width: 1200px;
   margin: 0;
-  padding: 0;
+  padding: 35px 0 70px;
   background-image: url("../images/background/properties.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -638,8 +634,9 @@ body {
 
 .catalog-hotels-header {
   width: 1060px;
+  margin: 0;
   margin-left: 70px;
-  margin-top: 35px;
+  margin-bottom: 35px;
   padding: 0;
 }
 
@@ -656,7 +653,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .breadcrumbs-link-hotel {
@@ -671,48 +668,54 @@ body {
 .breadcrumbs-link-main {
   margin: 0;
   margin-right: 11px;
+  padding: 0;
   content: url("../images/icons/main-page.svg");
 }
 
 .breadcrumbs-link-mark {
   margin: 0;
   margin-right: 11px;
+  padding: 0;
   content: url("../images/icons/arrow.svg");
 }
 
-.catalog-filter-all {
+/* Гостиницы Седоны-фильтры*/
+fieldset {
+  border: 0 none;
+}
+
+.catalog-filter {
   display: flex;
   width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog-filter fieldset:not(:nth-child(1)):not(:nth-child(3)) {
+  width: 150px;
   margin: 0;
   margin-left: 70px;
   padding: 0;
-
 }
 
-.catalog-filter-choice {
+.catalog-filter fieldset:nth-child(3) {
+  width: 288px;
+  margin: 0;
+  margin-left: 140px;
+  padding: 0;
+}
+
+.catalog-button-all {
   display: flex;
-  width: 370px;
+  flex-direction: column;
   margin: 0;
+  margin-left: 70px;
   padding: 0;
-}
-
-.catalog-filter-button {
-  display: flex;
-  width: 549px;
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-filter-group {
-  width: 150px;
-  margin: 0;
-  padding: 0;
-
+  align-self: flex-end;
 }
 
 .catalog-filter-title {
   margin: 0;
-  padding-top: 35px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -734,6 +737,8 @@ body {
 .button-reset {
   width: 191px;
   height: 36px;
+  background-color: #FFFFFF00;
+  border: 0 none;
 }
 
 /* РЕЗУЛЬТАТ ОТБОРА И ВЫВОД НА СТРАНИЦУ */
@@ -783,7 +788,6 @@ body {
   padding: 17px 16px;
 }
 
-
 /* КАРТОЧКИ ОТЕЛЕЙ */
 .hotel {
   width: 1200px;
@@ -796,8 +800,7 @@ body {
   width: 1060px;
   margin: 0;
   margin-left: 70px;
-  padding: 0 20px;
-
+  padding: 0;
 }
 
 .hotel-card {
@@ -849,7 +852,11 @@ body {
 
 /* ПАГИНАЦИЯ */
 .pagination {
+  display: flex;
   margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  padding-top: 40px;
   list-style-type: none;
   background-color: #FFFFFF;
   font-size: 20px;
@@ -858,9 +865,22 @@ body {
   text-decoration: none;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 11px 18px;
+  line-height: 36px;
+  font-weight: 700;
   color: #FFFFFF;
   background-color: #82B3D3;
+  text-decoration: none;
+  text-align: center;
 }
 
 .pagination-link-plenty {

@@ -65,79 +65,71 @@
             </ul>
           </header>
           <!--ФИЛЬТРЫ ДЛЯ ВЫВОДА СПИСКА ОТЕЛЕЙ НА СТР-->
-          <div class="catalog-filter-all">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="catalog-filter-choice">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <!--Фильтр по инфрастурктуре-->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="cotnrol-input" type="checkbox" name="swimming-pool" checked>
 
-                <!--Фильтр по инфрастурктуре-->
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="cotnrol-input" type="checkbox" name="swimming-pool" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="cotnrol-input" type="checkbox" name="parking" checked>
 
-                        Бассейн
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="cotnrol-input" type="checkbox" name="parking" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="cotnrol-input" type="checkbox" name="wi-fi">
 
-                        Парковка
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="cotnrol-input" type="checkbox" name="wi-fi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <!--Фильтр по типу жилья-->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <ul class="catatog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="cotnrol-input" type="radio" name="housing-group" value="hotel" checked>
 
-                        Wi-Fi
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="cotnrol-input" type="radio" name="housing-group" value="motel">
 
+                    Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="cotnrol-input" type="radio" name="housing-group" value="apartment">
 
-                <!--Фильтр по типу жилья-->
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип жилья:</legend>
-                  <ul class="catatog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="cotnrol-input" type="radio" name="housing-group" value="hotel" checked>
-
-                        Гостиница
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="cotnrol-input" type="radio" name="housing-group" value="motel">
-
-                        Мотель
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="cotnrol-input" type="radio" name="housing-group" value="apartment">
-
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-
-              </div>
-              <div class="catalog-filter-button">
-                <!--Фильтр по цене-->
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                </fieldset>
-                <!--Кнопки фильтра -->
-                <button class="button button-apply" type="submit">Применить</button>
-                <button class="button button-reset" type="reset">Сбросить</button>
-              </div>
-            </form>
-          </div>
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <!--Фильтр по цене-->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            </fieldset>
+            <!--Кнопки фильтра -->
+            <div class="catalog-button-all">
+              <button class="button button-apply" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
+          </form>
         </section>
         <!--РЕЗУЛЬТАТ ОТБОРА И ВЫВОД НА СТРАНИЦУ-->
         <section class="select">
@@ -148,28 +140,26 @@
               <td>38</td>
             </tr>
           </table>
-
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-
           <ul class="select-button-block">
             <li class="button-block">
-            <a class="select-button" href="#">
-              <span class="visually-hidden">Показать по три карточки</span>
-            </a>
+              <a class="select-button" href="#">
+                <span class="visually-hidden">Показать по три карточки</span>
+              </a>
             </li>
             <li class="button-block">
-            <a class="select-button" href="#">
-              <span class="visually-hidden">Показать по одной карточке</span>
-            </a>
+              <a class="select-button" href="#">
+                <span class="visually-hidden">Показать по одной карточке</span>
+              </a>
             </li>
             <li class="button-block">
-            <a class="select-button" href="#">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
+              <a class="select-button" href="#">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
             </li>
           </ul>
         </section>
@@ -356,5 +346,4 @@
       </div>
     </footer>
   </body>
-
 </html>
