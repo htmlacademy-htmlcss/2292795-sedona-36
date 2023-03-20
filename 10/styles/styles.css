@@ -627,7 +627,7 @@ body {
   padding: 35px 0 70px;
   background-image: url("../images/background/properties.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-color: #000000;
   color: #FFFFFF;
 }
@@ -681,25 +681,26 @@ body {
 
 /* Гостиницы Седоны-фильтры*/
 fieldset {
-  border: 0 none;
+  /*border: 0 none;*/
 }
 
 .catalog-filter {
   display: flex;
   width: 1060px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
-.catalog-filter fieldset:not(:nth-child(1)):not(:nth-child(3)) {
-  width: 150px;
+.catalog-filter .catalog-filter-group:not(:nth-child(3)) {
+  min-width: 150px;
   margin: 0;
   margin-left: 70px;
   padding: 0;
+
 }
 
-.catalog-filter fieldset:nth-child(3) {
-  width: 288px;
+.catalog-filter .catalog-filter-group:nth-child(3) {
+  min-width: 288px;
   margin: 0;
   margin-left: 140px;
   padding: 0;
@@ -708,6 +709,7 @@ fieldset {
 .catalog-button-all {
   display: flex;
   flex-direction: column;
+  width: 191px;
   margin: 0;
   margin-left: 70px;
   padding: 0;
@@ -721,6 +723,17 @@ fieldset {
   font-weight: 700;
 }
 
+.catalog-filter-list {
+  display: block;
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.catalog-filter-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
@@ -728,14 +741,15 @@ fieldset {
 }
 
 .button-apply {
-  width: 191px;
   height: 36px;
   background-color: #82B3D3;
+  margin-bottom: 32px;
   padding: 8px 50px;
+  border: 0 none;
 }
 
+
 .button-reset {
-  width: 191px;
   height: 36px;
   background-color: #FFFFFF00;
   border: 0 none;
@@ -759,7 +773,6 @@ fieldset {
   margin: 0;
   margin-left: 200px;
   padding: 14px 20px;
-  /*padding-left: 20px;*/
   width: 292px;
   font-weight: 400;
   border: 2px solid #E5E5E5;
