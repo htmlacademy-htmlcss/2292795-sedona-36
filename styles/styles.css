@@ -627,7 +627,7 @@ body {
   padding: 35px 0 70px;
   background-image: url("../images/background/properties.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-color: #000000;
   color: #FFFFFF;
 }
@@ -681,25 +681,26 @@ body {
 
 /* Гостиницы Седоны-фильтры*/
 fieldset {
-  border: 0 none;
+  /*border: 0 none;*/
 }
 
 .catalog-filter {
   display: flex;
   width: 1060px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
-.catalog-filter fieldset:not(:nth-child(1)):not(:nth-child(3)) {
-  width: 150px;
+.catalog-filter .catalog-filter-group:not(:nth-child(3)) {
+  min-width: 150px;
   margin: 0;
   margin-left: 70px;
   padding: 0;
+
 }
 
-.catalog-filter fieldset:nth-child(3) {
-  width: 288px;
+.catalog-filter .catalog-filter-group:nth-child(3) {
+  min-width: 288px;
   margin: 0;
   margin-left: 140px;
   padding: 0;
@@ -708,6 +709,7 @@ fieldset {
 .catalog-button-all {
   display: flex;
   flex-direction: column;
+  width: 191px;
   margin: 0;
   margin-left: 70px;
   padding: 0;
@@ -721,6 +723,17 @@ fieldset {
   font-weight: 700;
 }
 
+.catalog-filter-list {
+  display: block;
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+}
+
+.catalog-filter-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
@@ -728,14 +741,15 @@ fieldset {
 }
 
 .button-apply {
-  width: 191px;
   height: 36px;
   background-color: #82B3D3;
+  margin-bottom: 32px;
   padding: 8px 50px;
+  border: 0 none;
 }
 
+
 .button-reset {
-  width: 191px;
   height: 36px;
   background-color: #FFFFFF00;
   border: 0 none;
@@ -758,10 +772,11 @@ fieldset {
 .select-control {
   margin: 0;
   margin-left: 200px;
-  padding: 14px 0;
-  padding-left: 20px;
+  padding: 14px 20px;
   width: 292px;
   font-weight: 400;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .select-button-block {
@@ -801,52 +816,92 @@ fieldset {
   margin: 0;
   margin-left: 70px;
   padding: 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+
 }
 
 .hotel-card {
   width: 340px;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
+  display: grid;
+  grid-template-columns: auto 140px 140px auto;
+  grid-template-rows: auto min-content min-content 37px 37px auto;
+  gap: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
-.hotel-card:not(:last-child) {
-  margin-bottom: 20px;
+.hotel-card-image {
+  object-fit: contain;
 }
 
 .hotel-card-link {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
   color: #000000;
   text-decoration: none;
 }
 
 .hotel-card-title {
   margin: 0;
-  margin-top: 16px;
-  padding: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-align: left;
 }
 
-.hotel-card-type,
-.hotel-card-price {
+.hotel-card-type {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
   font-weight: 400;
+  margin: 0;
+}
+
+.hotel-card-price {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  font-weight: 400;
+  margin: 0;
+}
+
+.button-detailed {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 26px;
 }
 
 .button-favourites {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #82B3D3;
+  padding: 8px 20px;
 }
 
 .hotel-ratin-stars .label-rating {
   content: url("../images/icons/star.svg");
 }
 
+.hotel-ratin-stars {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  margin: 0;
+  align-self: center;
+}
+
 .hotel-card-rating {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+  margin: 0;
   background-color: #F2F2F2;
   font-size: 16;
   line-height: 20px;
   font-weight: 400;
+  padding: 8px 22px;
   text-align: center;
 }
 
